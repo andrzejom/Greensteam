@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: andrzej-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      bb: web
+  template:
+    metadata:
+      labels:
+        bb: web
+    spec:
+      containers:
+      - name: andrzej-image
+        image: gabiabi/andrzej:latest
+        ports:
+        - containerPort: 80
+        imagePullSecrets:
+        - name: dockerhub-credential
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: andrew-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    bb: web
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30001
+ 
