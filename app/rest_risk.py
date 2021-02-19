@@ -70,7 +70,3 @@ async def get_risk():
     passengers_risks.append(risk_passenger)
     return risk
 
-
-@app.get("/passengers/risk", tags=["get_risks"])
-async def get_risks():
-    return passengers_risks
