@@ -9,7 +9,7 @@ Under _http://127.0.0.1/docs _**schemas:passenger**_ you will find structure of 
 
 In order to send passenger data _**post** http://127.0.0.1/passenger_
 
-In order to retrive last posted passenger risk **_get** http://127.0.0.1/passenger/risk_
+In order to retrive last posted passenger risk _**get** http://127.0.0.1/passenger/risk_
 
 In order to retrive list of posted passengers _**get** http://127.0.0.1/passengers_
 
