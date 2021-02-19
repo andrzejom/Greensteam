@@ -11,6 +11,4 @@ In order to send passenger data _**post** http://127.0.0.1/passenger_
 
 In order to retrive last posted passenger risk _**get** http://127.0.0.1/passenger/risk_
 
-In order to retrive list of posted passengers _**get** http://127.0.0.1/passengers_
-
-In order to retrive list of risks for earlier assessed passengers _**get** http://127.0.0.1/passengers/risk_
+In order to retrive list of posted passengers _**get** http://127.0.0.1/passengers_ Passengers also contains information about their risk once it was assessed. 
